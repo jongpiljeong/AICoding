@@ -1,0 +1,35 @@
+# Large media files
+*.mp4
+*.mov
+*.avi
+
+# Node modules
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Next.js build output
+.next/
+
+# Python build artifacts
+*.egg-info/
+dist/
+build/
+
+# Files with secrets
+github.txt
+Study-05/index.html
+Study-05/index_pdf.html
+
+# OS files
+.DS_Store
+Thumbs.db

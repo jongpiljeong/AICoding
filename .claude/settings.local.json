@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force -Path CLIPer/modified_clip, CLIPer/diffusion_model, CLIPer/datasets_loader, CLIPer/segmentor, CLIPer/eval, CLIPer/configs, CLIPer/scripts, CLIPer/utils)",
+      "Bash(Select-Object FullName)"
+    ]
+  }
+}

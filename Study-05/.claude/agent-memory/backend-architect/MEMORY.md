@@ -1,0 +1,2 @@
+- [AI 공감 다이어리 프로젝트 개요](project_ai_diary.md) — 단일 index.html 서버리스 앱, OpenRouter API, localStorage 30일 TTL
+- [PDF 문서 요약 앱 개요](project_pdf_summary.md) — index_pdf.html, PDF.js v3.11.174, OpenRouter API, localStorage 히스토리 10개

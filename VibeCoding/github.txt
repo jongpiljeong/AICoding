@@ -1,0 +1,12 @@
+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
+
+claude mcp add-json github '{"type":"http","url":"https://api.githubcopilot.com/mcp","headers":{"Authorization":"Bearer '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'"}}'
+
+
+Supabase
+qukAd0aUkCBUoNc3
+
+
+claude mcp add supabase -s local -e SUPABASE_ACCESS_TOKEN=<Supabase API 토큰> -- cmd /c npx -y @supabase/mcp-server-supabase@latest
+
+sbp_e60c9db1df0691e4058b4e4ec93915cf46e060f6

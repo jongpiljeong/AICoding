@@ -1,0 +1,39 @@
+# CLIPer inference configuration schema
+# Paper: arXiv 2411.13836
+
+model:
+  backbone: "vit-b-16"            # vit-b-16 | vit-l-14
+  clip_pretrained: "laion2b_s34b_b88k"   # open_clip pretrain tag
+  sd_model_id: "runwayml/stable-diffusion-v1-5"
+
+clip:
+  fuse_layer_start: 6            # layer index to start collecting patch features (0-indexed)
+  input_short_side: 336          # resize image so shorter side = this value
+  patch_size: 16                 # ViT patch size (auto-set by backbone)
+  use_sliding_window: false      # tile-based inference for high-res inputs
+  sliding_window_stride: 224     # stride in pixels when sliding_window is enabled
+
+diffusion:
+  sd_timestep: 45                # noise timestep fed to SD UNet for feature extraction
+  unet_feature_layers:           # which UNet decoder blocks to tap
+    - "up_blocks.0"
+    - "up_blocks.1"
+  feature_res: 64                # spatial resolution to upsample diffusion features to
+
+segmentor:
+  use_fgc: true                  # Fine-Grained Correction with diffusion features
+  fgc_alpha: 0.4                 # weight for diffusion feature contribution
+  temperature: 0.07              # softmax temperature for similarity maps
+  bg_threshold: 0.45             # background score threshold
+
+dataset:
+  name: "ade20k"                 # ade20k | pascal_voc | coco_stuff164k
+  root: "data/ADEChallengeData2016"
+  split: "validation"
+  category_file: "configs/categories/ade20k_847.txt"
+
+eval:
+  output_dir: "outputs"
+  save_predictions: false
+  num_workers: 4
+  batch_size: 1                  # inference always runs at batch_size=1

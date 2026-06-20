@@ -1,0 +1,14 @@
+_base_: "base.yaml"
+
+backbone: "ViT-B-16"
+fuse_layer_start: 6
+use_fgc: true
+use_sliding_window: false
+
+dataset:
+  name: "voc2012"
+  root: "data/VOCdevkit/VOC2012"
+  split: "val"
+  ignore_index: 255
+  num_classes: 21
+  classnames_file: "configs/classnames/voc21.txt"

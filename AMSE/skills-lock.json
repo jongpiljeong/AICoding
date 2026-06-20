@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "skills": {
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "computedHash": "228f87d57035100d9dc6efcfc05aafd4b6e3962adacaa04b8217ab2fadb15dc8"
+    },
+    "chat-with-arxiv": {
+      "source": "qodex-ai/ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/chat-with-arxiv/SKILL.md",
+      "computedHash": "a29698ed8c05873dfaf812478060e906c6508c2a08bbf0b94995a0c61bad1b62"
+    },
+    "figure-generation": {
+      "source": "lingzhi227/agent-research-skills",
+      "sourceType": "github",
+      "skillPath": "skills/figure-generation/SKILL.md",
+      "computedHash": "472e52555420890a8974927ae3bcd7740c425e66333495ce0057a210957f3d7e"
+    },
+    "manufacturing-expert": {
+      "source": "personamanagmentlayer/pcl",
+      "sourceType": "github",
+      "skillPath": "stdlib/domains/manufacturing-expert/SKILL.md",
+      "computedHash": "f7fc28a8e8907bffb42d9d685a9e68fa34e7d4d258e5a104d6ee9fce3045171b"
+    },
+    "paper-reading": {
+      "source": "mizoreww/awesome-claude-code-config",
+      "sourceType": "github",
+      "skillPath": "skills/paper-reading/SKILL.md",
+      "computedHash": "a709d3e4bc80e4f9553eb72fd86d90cc834f80ad6dea1d21cdf70e947b717502"
+    },
+    "proposal-writer": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "proposal-writer/SKILL.md",
+      "computedHash": "a2cecc481c72c08064b1d8ee77ab1b13751fd989707b0d41748639df65bc88e1"
+    },
+    "research-paper-writing": {
+      "source": "master-cai/research-paper-writing-skills",
+      "sourceType": "github",
+      "skillPath": "research-paper-writing/SKILL.md",
+      "computedHash": "5aae602b553f08a143efe47dc1a8bc679a92ed2d1bb6cc96277b70efb8cce72e"
+    }
+  }
+}

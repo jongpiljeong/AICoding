@@ -1,0 +1,1 @@
+- [AI 공감 다이어리 아키텍처 및 버그 이력](project_ai_diary.md) — 단일 HTML 앱, display:none 애니메이션 버그, XSS 부분 적용, API 키 하드코딩 패턴

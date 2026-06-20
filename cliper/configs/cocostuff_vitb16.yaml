@@ -1,0 +1,25 @@
+defaults: base.yaml
+
+model:
+  backbone: "vit-b-16"
+  clip_pretrained: "laion2b_s34b_b88k"
+
+clip:
+  fuse_layer_start: 6
+  input_short_side: 336
+  use_sliding_window: false
+
+diffusion:
+  sd_timestep: 45
+
+segmentor:
+  use_fgc: true
+  fgc_alpha: 0.35
+  temperature: 0.07
+  bg_threshold: 0.45
+
+dataset:
+  name: "coco_stuff164k"
+  root: "data/coco_stuff164k"
+  split: "val2017"
+  category_file: "configs/categories/coco_stuff_164.txt"

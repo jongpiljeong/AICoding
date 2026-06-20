@@ -1,0 +1,1 @@
+- [PDF 요약 앱 프로젝트](project_pdf_summary.md) — 단일 HTML, file:// 프로토콜, PDF.js v3.11.174, OpenRouter 무료 모델, 12,000자 트리밍 기준

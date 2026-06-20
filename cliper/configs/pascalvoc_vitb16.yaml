@@ -1,0 +1,26 @@
+defaults: base.yaml
+
+model:
+  backbone: "vit-b-16"
+  clip_pretrained: "laion2b_s34b_b88k"
+
+clip:
+  fuse_layer_start: 6
+  input_short_side: 336
+  use_sliding_window: true
+  sliding_window_stride: 224
+
+diffusion:
+  sd_timestep: 45
+
+segmentor:
+  use_fgc: true
+  fgc_alpha: 0.4
+  temperature: 0.07
+  bg_threshold: 0.50             # VOC has clean backgrounds; slightly higher threshold
+
+dataset:
+  name: "pascal_voc"
+  root: "data/VOCdevkit/VOC2012"
+  split: "val"
+  category_file: "configs/categories/pascal_voc_20.txt"

@@ -1,0 +1,18 @@
+_base_: "base.yaml"
+
+backbone: "ViT-L-14"
+fuse_layer_start: 12
+use_fgc: true
+use_sliding_window: true
+
+sliding_window:
+  window_size: 336
+  stride: 224
+
+dataset:
+  name: "coco_stuff164k"
+  root: "data/coco_stuff164k"
+  split: "val"
+  ignore_index: 255
+  num_classes: 171
+  classnames_file: "configs/classnames/coco_stuff164k.txt"
