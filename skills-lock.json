@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "manufacturing-expert": {
+      "source": "personamanagmentlayer/pcl",
+      "sourceType": "github",
+      "skillPath": "stdlib/domains/manufacturing-expert/SKILL.md",
+      "computedHash": "f7fc28a8e8907bffb42d9d685a9e68fa34e7d4d258e5a104d6ee9fce3045171b"
+    },
+    "proposal-writer": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "proposal-writer/SKILL.md",
+      "computedHash": "a2cecc481c72c08064b1d8ee77ab1b13751fd989707b0d41748639df65bc88e1"
+    },
+    "research-paper-writer": {
+      "source": "ailabs-393/ai-labs-claude-skills",
+      "sourceType": "github",
+      "skillPath": "packages/skills/research-paper-writer/SKILL.md",
+      "computedHash": "d91e792b4946cc65014786e0032e8a63e0eaee17cd3c2fc5bc392d6fcb3a1cd6"
+    }
+  }
+}
